@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(CollectionViewTableViewCell.self,
                            forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
+        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         tableView.delegate = self
         tableView.dataSource = self
         return tableView
