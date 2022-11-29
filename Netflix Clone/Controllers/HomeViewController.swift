@@ -9,11 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+
+
     private lazy var homeFeedTable: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(CollectionViewTableViewCell.self,
                            forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
-        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         tableView.delegate = self
         tableView.dataSource = self
         return tableView
@@ -24,6 +25,8 @@ class HomeViewController: UIViewController {
         setupHierarchy()
         setupLayout()
         view.backgroundColor = .systemBackground
+        let headerView = HeroHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        homeFeedTable.tableHeaderView = headerView
     }
 
     override func viewDidLayoutSubviews() {
