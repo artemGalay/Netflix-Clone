@@ -20,6 +20,7 @@
 		D9A2B89E29367CB500C32807 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2B89D29367CB500C32807 /* APICaller.swift */; };
 		D9A2B8A4293733A800C32807 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2B8A3293733A800C32807 /* MovieModel.swift */; };
 		D9A2B8A62937374D00C32807 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2B8A52937374D00C32807 /* Extensions.swift */; };
+		D9A2B8A8293739FB00C32807 /* TvModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2B8A7293739FB00C32807 /* TvModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D9A2B89D29367CB500C32807 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		D9A2B8A3293733A800C32807 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		D9A2B8A52937374D00C32807 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D9A2B8A7293739FB00C32807 /* TvModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D9A2B8A3293733A800C32807 /* MovieModel.swift */,
+				D9A2B8A7293739FB00C32807 /* TvModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				D9A2B87C2935FB8E00C32807 /* MainTabBarViewController.swift in Sources */,
 				D9A2B89E29367CB500C32807 /* APICaller.swift in Sources */,
 				D9A2B89A2936232B00C32807 /* CollectionViewTableViewCell.swift in Sources */,
+				D9A2B8A8293739FB00C32807 /* TvModel.swift in Sources */,
 				D9A2B8782935FB8E00C32807 /* AppDelegate.swift in Sources */,
 				D9A2B88D29361C8F00C32807 /* HomeViewController.swift in Sources */,
 				D9A2B8A62937374D00C32807 /* Extensions.swift in Sources */,

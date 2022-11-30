@@ -67,7 +67,6 @@ class HomeViewController: UIViewController {
         //                print(error)
         //            }}
         APICaller.shared.getTrendingTVs { results in
-            <#code#>
         }
     }
 }
