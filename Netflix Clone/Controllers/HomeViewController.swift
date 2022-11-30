@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
         let headerView = HeroHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTable.tableHeaderView = headerView
 
-        getTrendingMovies()
+        fetchData()
     }
 
     override func viewDidLayoutSubviews() {
@@ -58,8 +58,16 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
     }
 
-    private func getTrendingMovies() {
-        APICaller.shared.getTrendingMovies { _ in
+    private func fetchData() {
+        //        APICaller.shared.getTrendingMovies { results in
+        //            switch results {
+        //            case .success(let movies):
+        //                print(movies)
+        //            case .failure(let error):
+        //                print(error)
+        //            }}
+        APICaller.shared.getTrendingTVs { results in
+            <#code#>
         }
     }
 }
@@ -98,7 +106,7 @@ extension HomeViewController: UITableViewDataSource {
         header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
         header.textLabel?.textColor = .white
-        header.textLabel?.text = header.textLabel?.text?.lowercased()
+        header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetter()
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
