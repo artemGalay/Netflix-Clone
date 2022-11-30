@@ -66,8 +66,18 @@ class HomeViewController: UIViewController {
         //            case .failure(let error):
         //                print(error)
         //            }}
-        APICaller.shared.getTrendingTVs { results in
+//        APICaller.shared.getTrendingTVs { results in
+//        }
+//        APICaller.shared.getUpComingMovies { _ in
+//
+//        }
+//        APICaller.shared.getPopular { _ in
+//        }
+
+        APICaller.shared.getTopRated { _ in
         }
+
+
     }
 }
 
