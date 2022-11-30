@@ -11,8 +11,6 @@ class HomeViewController: UIViewController {
 
     let sectionTitles: [String] = ["Trending Movies", "Popular", "Trending TV", "Upcoming Movies", "Top rated"]
 
-
-
     private lazy var homeFeedTable: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(CollectionViewTableViewCell.self,
@@ -31,6 +29,8 @@ class HomeViewController: UIViewController {
 
         let headerView = HeroHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTable.tableHeaderView = headerView
+
+        getTrendingMovies()
     }
 
     override func viewDidLayoutSubviews() {
@@ -55,9 +55,12 @@ class HomeViewController: UIViewController {
             UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
             UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil),
         ]
-
         navigationController?.navigationBar.tintColor = .white
+    }
 
+    private func getTrendingMovies() {
+        APICaller.shared.getTrendingMovies { _ in
+        }
     }
 }
 

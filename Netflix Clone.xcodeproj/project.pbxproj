@@ -17,6 +17,7 @@
 		D9A2B89329361D4500C32807 /* DownloadlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2B89229361D4500C32807 /* DownloadlsViewController.swift */; };
 		D9A2B89A2936232B00C32807 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2B8992936232B00C32807 /* CollectionViewTableViewCell.swift */; };
 		D9A2B89C29366F3A00C32807 /* HeroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2B89B29366F3A00C32807 /* HeroHeaderView.swift */; };
+		D9A2B89E29367CB500C32807 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2B89D29367CB500C32807 /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D9A2B89229361D4500C32807 /* DownloadlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadlsViewController.swift; sourceTree = "<group>"; };
 		D9A2B8992936232B00C32807 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		D9A2B89B29366F3A00C32807 /* HeroHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderView.swift; sourceTree = "<group>"; };
+		D9A2B89D29367CB500C32807 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		D9A2B898293622F900C32807 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				D9A2B89D29367CB500C32807 /* APICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				D9A2B89C29366F3A00C32807 /* HeroHeaderView.swift in Sources */,
 				D9A2B88F29361CC200C32807 /* UpcomingViewController.swift in Sources */,
 				D9A2B87C2935FB8E00C32807 /* MainTabBarViewController.swift in Sources */,
+				D9A2B89E29367CB500C32807 /* APICaller.swift in Sources */,
 				D9A2B89A2936232B00C32807 /* CollectionViewTableViewCell.swift in Sources */,
 				D9A2B8782935FB8E00C32807 /* AppDelegate.swift in Sources */,
 				D9A2B88D29361C8F00C32807 /* HomeViewController.swift in Sources */,
